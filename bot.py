@@ -4,12 +4,12 @@ from dotenv import load_dotenv
 from binance.client import Client
 from binance.enums import *
 
-# Load environment variables from .env
+# Load API credentials
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
 API_SECRET = os.getenv("API_SECRET")
 
-# Configure logging
+# Setup logging
 logging.basicConfig(
     filename='bot.log',
     level=logging.INFO,
@@ -21,20 +21,18 @@ class TradingBot:
         self.client = Client(API_KEY, API_SECRET)
         if testnet:
             self.client.FUTURES_URL = 'https://testnet.binancefuture.com/fapi'
-            self.client.FUTURES_WEBSOCKET_URL = 'wss://stream.binancefuture.com/ws'
-        logging.info("Initialized Binance Futures Testnet Client.")
+        logging.info("Initialized Binance Testnet client")
 
     def get_balance(self, asset="USDT"):
         try:
-            balance_info = self.client.futures_account_balance()
-            for asset_info in balance_info:
-                if asset_info["asset"] == asset:
-                    logging.info(f"Retrieved balance: {asset_info['balance']} {asset}")
-                    return float(asset_info["balance"])
-            logging.warning(f"Asset {asset} not found in balance.")
+            balances = self.client.futures_account_balance()
+            for b in balances:
+                if b["asset"] == asset:
+                    logging.info(f"Fetched {asset} balance: {b['balance']}")
+                    return float(b["balance"])
             return 0.0
         except Exception as e:
-            logging.error(f"Failed to fetch balance: {e}")
+            logging.error(f"Balance fetch failed: {e}")
             return 0.0
 
     def place_order(self, symbol, side, order_type, quantity, price=None, stop_price=None):
@@ -43,7 +41,7 @@ class TradingBot:
             side = SIDE_BUY if side.upper() == "BUY" else SIDE_SELL
             order_type = order_type.upper()
 
-            params = {
+            order_params = {
                 "symbol": symbol,
                 "side": side,
                 "type": order_type,
@@ -51,24 +49,17 @@ class TradingBot:
             }
 
             if order_type == "LIMIT":
-                if not price:
-                    raise ValueError("Limit price required for LIMIT order.")
-                params["price"] = str(price)
-                params["timeInForce"] = TIME_IN_FORCE_GTC
+                order_params["price"] = str(price)
+                order_params["timeInForce"] = TIME_IN_FORCE_GTC
 
             elif order_type == "STOP_LIMIT":
-                if not price or not stop_price:
-                    raise ValueError("Both stop price and limit price required for STOP_LIMIT order.")
-                params["stopPrice"] = str(stop_price)
-                params["price"] = str(price)
-                params["timeInForce"] = TIME_IN_FORCE_GTC
+                order_params["stopPrice"] = str(stop_price)
+                order_params["price"] = str(price)
+                order_params["timeInForce"] = TIME_IN_FORCE_GTC
 
-            elif order_type == "MARKET":
-                pass  # No extra params needed
-
-            logging.info(f"Placing {order_type} order: {params}")
-            order = self.client.futures_create_order(**params)
-            logging.info(f"✅ Order successful: {order}")
+            logging.info(f"Placing {order_type} order: {order_params}")
+            order = self.client.futures_create_order(**order_params)
+            logging.info(f"✅ Order placed successfully: {order}")
             return order
 
         except Exception as e:

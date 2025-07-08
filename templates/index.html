@@ -1,57 +1,75 @@
-<!-- templates/index.html -->
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Binance Trading Bot</title>
-    <style>
-        body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: auto; }
-        .success { color: green; }
-        .danger { color: red; }
-        label, input, select { display: block; margin: 10px 0; }
-    </style>
+  <title>Trading Bot</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      color: white;
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+    input, select {
+      padding: 0.4rem;
+      margin: 0.5rem 0;
+      width: 200px;
+    }
+    .success { color: lightgreen; }
+    .danger { color: red; }
+  </style>
+  <script>
+    function toggleFields() {
+      const type = document.getElementById("order_type").value;
+      document.getElementById("limit_fields").style.display = (type === "LIMIT") ? "block" : "none";
+      document.getElementById("stop_limit_fields").style.display = (type === "STOP_LIMIT") ? "block" : "none";
+    }
+  </script>
 </head>
 <body>
-    <h1>🚀 Binance Futures Testnet Bot</h1>
-    <p>💰 Wallet Balance: <strong>{{ balance }} USDT</strong></p>
+  <h2>🧠 Binance Testnet Trading Bot</h2>
+  <p>💰 USDT Balance: {{ balance }}</p>
 
-    {% with messages = get_flashed_messages(with_categories=true) %}
-      {% for category, message in messages %}
-        <p class="{{ category }}">{{ message }}</p>
-      {% endfor %}
-    {% endwith %}
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for category, message in messages %}
+      <p class="{{ category }}">{{ message }}</p>
+    {% endfor %}
+  {% endwith %}
 
-    <form method="POST">
-        <label>Symbol:</label>
-        <input name="symbol" value="BTCUSDT" />
+  <form method="POST">
+    <label>Symbol:</label><br>
+    <input name="symbol" value="BTCUSDT" required /><br>
 
-        <label>Side:</label>
-        <select name="side">
-            <option value="BUY">Buy</option>
-            <option value="SELL">Sell</option>
-        </select>
+    <label>Side:</label><br>
+    <select name="side" required>
+      <option value="BUY">Buy</option>
+      <option value="SELL">Sell</option>
+    </select><br>
 
-        <label>Order Type:</label>
-        <select name="order_type" onchange="togglePriceField(this.value)">
-            <option value="MARKET">Market</option>
-            <option value="LIMIT">Limit</option>
-        </select>
+    <label>Order Type:</label><br>
+    <select name="order_type" id="order_type" onchange="toggleFields()" required>
+      <option value="MARKET">Market</option>
+      <option value="LIMIT">Limit</option>
+      <option value="STOP_LIMIT">Stop-Limit</option>
+    </select><br>
 
-        <label>Quantity:</label>
-        <input name="quantity" type="number" step="0.0001" />
+    <label>Quantity:</label><br>
+    <input name="quantity" type="number" step="0.001" required /><br>
 
-        <div id="priceDiv" style="display:none;">
-            <label>Limit Price:</label>
-            <input name="price" type="number" step="0.01" />
-        </div>
+    <div id="limit_fields" style="display:none;">
+      <label>Limit Price:</label><br>
+      <input name="price" type="number" step="0.01" /><br>
+    </div>
 
-        <button type="submit">Place Order</button>
-    </form>
+    <div id="stop_limit_fields" style="display:none;">
+      <label>Stop Price:</label><br>
+      <input name="stop_price" type="number" step="0.01" /><br>
+      <label>Limit Price:</label><br>
+      <input name="price" type="number" step="0.01" /><br>
+    </div>
 
-    <script>
-        function togglePriceField(type) {
-            document.getElementById('priceDiv').style.display = type === 'LIMIT' ? 'block' : 'none';
-        }
-    </script>
+    <button type="submit">📈 Place Order</button>
+  </form>
+
+  <script>toggleFields();</script>
 </body>
 </html>
