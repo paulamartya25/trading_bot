@@ -1,30 +1,97 @@
-2025-07-08 23:30:41,077 [INFO] Initialized Binance Futures Testnet Client.
-2025-07-08 23:30:41,130 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+INFO:root:Initialized Binance Testnet client
+INFO:root:Initialized Binance Testnet client
+INFO:root:Initialized Binance Testnet client
+INFO:root:Initialized Binance Testnet client
+INFO:root:Initialized Binance Testnet client
+INFO:root:Initialized Binance Testnet client
+2025-07-10 15:22:08,474 [INFO] \u2705 Initialized Binance Futures Testnet Client
+2025-07-10 15:22:08,543 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2025-07-08 23:30:41,130 [INFO] [33mPress CTRL+C to quit[0m
-2025-07-08 23:30:41,131 [INFO]  * Restarting with stat
-2025-07-08 23:30:42,297 [INFO] Initialized Binance Futures Testnet Client.
-2025-07-08 23:30:42,326 [WARNING]  * Debugger is active!
-2025-07-08 23:30:42,329 [INFO]  * Debugger PIN: 133-827-714
-2025-07-08 23:30:57,194 [INFO] Retrieved balance: 14989.57751658 USDT
-2025-07-08 23:30:57,202 [INFO] 127.0.0.1 - - [08/Jul/2025 23:30:57] "GET / HTTP/1.1" 200 -
-2025-07-08 23:31:10,657 [INFO] Retrieved balance: 14989.57751658 USDT
-2025-07-08 23:31:10,659 [INFO] Placing LIMIT order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.01, 'price': '70000.0', 'timeInForce': 'GTC'}
-2025-07-08 23:31:11,107 [INFO] \u2705 Order successful: {'orderId': 5226331446, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ7bb6f7475a490e05174b82', 'price': '70000.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751997670781}
-2025-07-08 23:31:11,108 [INFO] 127.0.0.1 - - [08/Jul/2025 23:31:11] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-07-08 23:31:11,620 [INFO] Retrieved balance: 14989.57751658 USDT
-2025-07-08 23:31:11,621 [INFO] 127.0.0.1 - - [08/Jul/2025 23:31:11] "GET / HTTP/1.1" 200 -
-2025-07-08 23:33:55,439 [INFO]  * Detected change in 'C:\\Users\\amart\\binance-bot\\bot.py', reloading
-2025-07-08 23:33:55,512 [INFO]  * Restarting with stat
-2025-07-08 23:36:11,406 [INFO] Initialized Binance Testnet client
-2025-07-08 23:39:41,266 [INFO] Initialized Binance Testnet client
-2025-07-08 23:41:02,483 [INFO] Initialized Binance Testnet client
-2025-07-08 23:41:02,494 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-07-10 15:22:08,544 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-10 15:22:08,545 [INFO]  * Restarting with stat
+2025-07-10 15:22:09,640 [INFO] \u2705 Initialized Binance Futures Testnet Client
+2025-07-10 15:22:09,668 [WARNING]  * Debugger is active!
+2025-07-10 15:22:09,671 [INFO]  * Debugger PIN: 133-827-714
+2025-07-10 15:22:41,707 [ERROR] \u274c Failed to fetch balance: APIError(code=-5000): Path /fapi/v1/balance, Method GET is invalid
+2025-07-10 15:22:41,722 [INFO] 127.0.0.1 - - [10/Jul/2025 15:22:41] "GET / HTTP/1.1" 200 -
+2025-07-10 15:22:41,799 [INFO] 127.0.0.1 - - [10/Jul/2025 15:22:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-10 15:25:59,596 [INFO] \u2705 Initialized Binance Futures Testnet Client
+2025-07-10 15:25:59,653 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2025-07-08 23:41:02,494 [INFO] [33mPress CTRL+C to quit[0m
-2025-07-08 23:41:42,932 [INFO] Fetched USDT balance: 14989.57751658
-2025-07-08 23:41:42,940 [INFO] 127.0.0.1 - - [08/Jul/2025 23:41:42] "GET / HTTP/1.1" 200 -
-2025-07-08 23:42:08,420 [INFO] Placing LIMIT order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': '70000.0', 'timeInForce': 'GTC'}
-2025-07-08 23:42:08,865 [INFO] \u2705 Order placed successfully: {'orderId': 5226387081, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ51ae1429f4950fc1dbb238', 'price': '70000.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751998328529}
-2025-07-08 23:42:09,303 [INFO] Fetched USDT balance: 14989.66476761
-2025-07-08 23:42:09,304 [INFO] 127.0.0.1 - - [08/Jul/2025 23:42:09] "POST / HTTP/1.1" 200 -
+2025-07-10 15:25:59,654 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-10 15:25:59,654 [INFO]  * Restarting with stat
+2025-07-10 15:26:00,894 [INFO] \u2705 Initialized Binance Futures Testnet Client
+2025-07-10 15:26:00,930 [WARNING]  * Debugger is active!
+2025-07-10 15:26:00,932 [INFO]  * Debugger PIN: 133-827-714
+2025-07-10 15:26:06,449 [ERROR] \u274c Failed to fetch balance: APIError(code=-5000): Path /fapi/v1/balance, Method GET is invalid
+2025-07-10 15:26:06,456 [INFO] 127.0.0.1 - - [10/Jul/2025 15:26:06] "GET / HTTP/1.1" 200 -
+2025-07-10 15:26:15,795 [ERROR] \u274c Failed to fetch balance: APIError(code=-5000): Path /fapi/v1/balance, Method GET is invalid
+2025-07-10 15:26:15,797 [INFO] 127.0.0.1 - - [10/Jul/2025 15:26:15] "POST / HTTP/1.1" 200 -
+2025-07-10 15:27:41,784 [INFO]  * Detected change in 'C:\\Users\\amart\\binance-bot\\src\\check_balance.py', reloading
+2025-07-10 15:27:41,916 [INFO]  * Restarting with stat
+2025-07-10 15:27:43,635 [INFO] \u2705 Initialized Binance Futures Testnet Client
+2025-07-10 15:27:43,698 [WARNING]  * Debugger is active!
+2025-07-10 15:27:43,703 [INFO]  * Debugger PIN: 133-827-714
+2025-07-10 15:27:49,838 [INFO]  * Detected change in 'C:\\Users\\amart\\binance-bot\\src\\check_balance.py', reloading
+2025-07-10 15:27:49,989 [INFO]  * Restarting with stat
+2025-07-10 15:27:51,998 [INFO] \u2705 Initialized Binance Futures Testnet Client
+2025-07-10 15:27:52,043 [WARNING]  * Debugger is active!
+2025-07-10 15:27:52,047 [INFO]  * Debugger PIN: 133-827-714
+2025-07-10 15:40:41,998 [INFO] \u2705 Initialized Binance Testnet client
+2025-07-10 15:40:42,065 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-10 15:40:42,065 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-10 15:40:42,066 [INFO]  * Restarting with stat
+2025-07-10 15:40:43,584 [INFO] \u2705 Initialized Binance Testnet client
+2025-07-10 15:40:43,632 [WARNING]  * Debugger is active!
+2025-07-10 15:40:43,635 [INFO]  * Debugger PIN: 133-827-714
+2025-07-10 15:41:13,098 [INFO] \u2705 Fetched USDT balance: 14938.07939722
+2025-07-10 15:41:13,106 [INFO] 127.0.0.1 - - [10/Jul/2025 15:41:13] "GET / HTTP/1.1" 200 -
+2025-07-10 15:41:20,442 [INFO] \U0001f4e6 Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2025-07-10 15:41:20,635 [INFO] \u2705 Order placed: {'orderId': 5236244896, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJe6957adb5df553f4664080', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1752142280885}
+2025-07-10 15:41:20,924 [INFO] \u2705 Fetched USDT balance: 14913.85848602
+2025-07-10 15:41:20,925 [INFO] 127.0.0.1 - - [10/Jul/2025 15:41:20] "POST / HTTP/1.1" 200 -
+2025-07-10 15:44:54,227 [INFO] \U0001f4e6 Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': '70000.0', 'timeInForce': 'GTC'}
+2025-07-10 15:44:54,424 [INFO] \u2705 Order placed: {'orderId': 5236252384, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJbf69351306f7f915dd5c66', 'price': '70000.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1752142494669}
+2025-07-10 15:44:54,979 [INFO] \u2705 Fetched USDT balance: 14913.41468775
+2025-07-10 15:44:54,980 [INFO] 127.0.0.1 - - [10/Jul/2025 15:44:54] "POST / HTTP/1.1" 200 -
+2025-07-10 15:46:06,997 [INFO] \U0001f4e6 Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_LIMIT', 'quantity': 0.01, 'stopPrice': '70000.0', 'price': 'None', 'timeInForce': 'GTC'}
+2025-07-10 15:46:07,189 [ERROR] \u274c Order placement failed: APIError(code=-1116): Invalid orderType.
+2025-07-10 15:46:07,375 [INFO] \u2705 Fetched USDT balance: 14913.41468775
+2025-07-10 15:46:07,376 [INFO] 127.0.0.1 - - [10/Jul/2025 15:46:07] "POST / HTTP/1.1" 200 -
+2025-07-10 15:46:24,466 [INFO] \U0001f4e6 Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_LIMIT', 'quantity': 0.01, 'stopPrice': '70000.0', 'price': 'None', 'timeInForce': 'GTC'}
+2025-07-10 15:46:24,650 [ERROR] \u274c Order placement failed: APIError(code=-1116): Invalid orderType.
+2025-07-10 15:46:25,090 [INFO] \u2705 Fetched USDT balance: 14913.41468775
+2025-07-10 15:46:25,091 [INFO] 127.0.0.1 - - [10/Jul/2025 15:46:25] "POST / HTTP/1.1" 200 -
+2025-07-10 15:46:33,873 [INFO] \U0001f4e6 Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2025-07-10 15:46:34,055 [INFO] \u2705 Order placed: {'orderId': 5236256926, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ5f32c8afe92b8ad3537d65', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1752142594308}
+2025-07-10 15:46:34,236 [INFO] \u2705 Fetched USDT balance: 14901.20523215
+2025-07-10 15:46:34,237 [INFO] 127.0.0.1 - - [10/Jul/2025 15:46:34] "POST / HTTP/1.1" 200 -
+2025-07-10 15:46:39,516 [INFO] \U0001f4e6 Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.11}
+2025-07-10 15:46:40,623 [INFO] \u2705 Order placed: {'orderId': 5236257086, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ9f6d562e40e71f1f147c95', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.110', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1752142599951}
+2025-07-10 15:46:40,906 [INFO] \u2705 Fetched USDT balance: 14884.55772055
+2025-07-10 15:46:40,907 [INFO] 127.0.0.1 - - [10/Jul/2025 15:46:40] "POST / HTTP/1.1" 200 -
+2025-07-10 15:46:50,464 [INFO] \U0001f4e6 Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.9}
+2025-07-10 15:46:51,694 [INFO] \u2705 Order placed: {'orderId': 5236257523, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJf85b41970c8f439d7584aa', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.900', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1752142611172}
+2025-07-10 15:46:52,160 [INFO] \u2705 Fetched USDT balance: 14844.61521655
+2025-07-10 15:46:52,161 [INFO] 127.0.0.1 - - [10/Jul/2025 15:46:52] "POST / HTTP/1.1" 200 -
+2025-07-10 15:53:27,600 [INFO] \U0001f4e6 Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.01}
+2025-07-10 15:53:28,649 [ERROR] \u274c Order placement failed: HTTPSConnectionPool(host='testnet.binancefuture.com', port=443): Max retries exceeded with url: /fapi/v1/order (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001B2DE8FB9D0>: Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions'))
+2025-07-10 15:53:28,689 [ERROR] \u274c Balance fetch failed: HTTPSConnectionPool(host='testnet.binancefuture.com', port=443): Max retries exceeded with url: /fapi/v3/balance?recvWindow=10000&timestamp=1752143008649&signature=cc9e43bbd6832b6b105baf838e0aeeb001e7432087e9fa360a466b418f975448 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001B2DF9B4910>: Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions'))
+2025-07-10 15:53:28,690 [INFO] 127.0.0.1 - - [10/Jul/2025 15:53:28] "POST / HTTP/1.1" 200 -
+2025-07-10 15:53:38,255 [INFO] \U0001f4e6 Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.01}
+2025-07-10 15:53:38,839 [INFO] \u2705 Order placed: {'orderId': 5236272906, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ7ec0e78a394b2ea4db8914', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1752143019081}
+2025-07-10 15:53:39,290 [INFO] \u2705 Fetched USDT balance: 14844.17132295
+2025-07-10 15:53:39,292 [INFO] 127.0.0.1 - - [10/Jul/2025 15:53:39] "POST / HTTP/1.1" 200 -
+2025-07-10 16:07:43,580 [INFO] \U0001f4e6 Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_LIMIT', 'quantity': 0.01, 'stopPrice': '69000.0', 'price': 'None', 'timeInForce': 'GTC'}
+2025-07-10 16:07:44,148 [ERROR] \u274c Order placement failed: APIError(code=-1116): Invalid orderType.
+2025-07-10 16:07:44,435 [INFO] \u2705 Fetched USDT balance: 14844.17132295
+2025-07-10 16:07:44,436 [INFO] 127.0.0.1 - - [10/Jul/2025 16:07:44] "POST / HTTP/1.1" 200 -
+2025-07-10 16:07:59,948 [INFO] \U0001f4e6 Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_LIMIT', 'quantity': 0.1, 'stopPrice': '65000.0', 'price': 'None', 'timeInForce': 'GTC'}
+2025-07-10 16:08:00,142 [ERROR] \u274c Order placement failed: APIError(code=-1116): Invalid orderType.
+2025-07-10 16:08:00,429 [INFO] \u2705 Fetched USDT balance: 14844.17132295
+2025-07-10 16:08:00,431 [INFO] 127.0.0.1 - - [10/Jul/2025 16:08:00] "POST / HTTP/1.1" 200 -
+2025-07-10 16:08:07,892 [INFO] \U0001f4e6 Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.89}
+2025-07-10 16:08:08,128 [INFO] \u2705 Order placed: {'orderId': 5236305179, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJbaf6008cd8b264f83ef9df', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.890', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1752143888306}
+2025-07-10 16:08:08,404 [INFO] \u2705 Fetched USDT balance: 14804.65844847
+2025-07-10 16:08:08,405 [INFO] 127.0.0.1 - - [10/Jul/2025 16:08:08] "POST / HTTP/1.1" 200 -
