@@ -1,0 +1,82 @@
+INFO:root:Initialized Binance Testnet client
+INFO:root:Initialized Binance Testnet client
+INFO:root:Initialized Binance Testnet client
+INFO:root:Initialized Binance Testnet client
+INFO:root:Initialized Binance Testnet client
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Initialized Binance Testnet client
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 103-074-957
+ERROR:root:Balance fetch failed: APIError(code=-5000): Path /fapi/v1/balance, Method GET is invalid
+INFO:werkzeug: * Detected change in 'C:\\Users\\amart\\AppData\\Roaming\\Python\\Python313\\site-packages\\jinja2\\environment.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\amart\\AppData\\Roaming\\Python\\Python313\\site-packages\\jinja2\\loaders.py', reloading
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:45:54] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:45:54] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:45:54] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:45:54] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=ILpbf6iLukIZO21N4KUU HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:45:54] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Initialized Binance Testnet client
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 103-074-957
+ERROR:root:Balance fetch failed: APIError(code=-5000): Path /fapi/v1/balance, Method GET is invalid
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:46:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:46:02] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:46:02] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:46:03] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=m5N1axrHWQpuqgcEMkuM HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:46:03] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:root:Initialized Binance Testnet client
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Initialized Binance Testnet client
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 103-074-957
+ERROR:root:Balance fetch failed: APIError(code=-5000): Path /fapi/v1/balance, Method GET is invalid
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:49:21] "GET / HTTP/1.1" 200 -
+INFO:root:Placing LIMIT order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.01, 'price': '70000.0', 'timeInForce': 'GTC'}
+INFO:root:\u2705 Order placed successfully: {'orderId': 5227219999, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'csPFZNsZmoFvoxJawAwvbI', 'price': '70000.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1752009576396}
+ERROR:root:Balance fetch failed: APIError(code=-5000): Path /fapi/v1/balance, Method GET is invalid
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:49:37] "POST / HTTP/1.1" 200 -
+INFO:root:Placing LIMIT order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': '120909.0', 'timeInForce': 'GTC'}
+INFO:root:\u2705 Order placed successfully: {'orderId': 5227221101, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'KRmUxRNFk7sdpHfV1dBBnx', 'price': '120909.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1752009598497}
+ERROR:root:Balance fetch failed: APIError(code=-5000): Path /fapi/v1/balance, Method GET is invalid
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:49:59] "POST / HTTP/1.1" 200 -
+INFO:root:Placing STOP_LIMIT order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_LIMIT', 'quantity': 0.01, 'stopPrice': '70000.0', 'price': 'None', 'timeInForce': 'GTC'}
+ERROR:root:\u274c Order failed: APIError(code=-1116): Invalid orderType.
+ERROR:root:Balance fetch failed: APIError(code=-5000): Path /fapi/v1/balance, Method GET is invalid
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:50:28] "POST / HTTP/1.1" 200 -
+INFO:root:Placing MARKET order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.01}
+INFO:root:\u2705 Order placed successfully: {'orderId': 5227227131, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'FbAlf0I9KnH53uWtmya8qq', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1752009709713}
+ERROR:root:Balance fetch failed: APIError(code=-5000): Path /fapi/v1/balance, Method GET is invalid
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 02:51:50] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\amart\\binance-bot\\src\\advanced\\oco.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\amart\\binance-bot\\src\\advanced\\twap.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Initialized Binance Testnet client
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 103-074-957
+INFO:root:Initialized Binance Testnet client
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Initialized Binance Testnet client
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 103-074-957
+INFO:root:Placing MARKET order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.01}
+INFO:root:\u2705 Order placed successfully: {'orderId': 5227277068, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': '2JnjQIE6tCl0ALOObMwax7', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1752010645276}
+ERROR:root:Balance fetch failed: APIError(code=-5000): Path /fapi/v1/balance, Method GET is invalid
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 03:07:26] "POST / HTTP/1.1" 200 -
+INFO:root:Placing MARKET order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+INFO:root:\u2705 Order placed successfully: {'orderId': 5227277837, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': '6t9t7fk1dnS2XOgnZahvjU', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1752010666085}
+ERROR:root:Balance fetch failed: APIError(code=-5000): Path /fapi/v1/balance, Method GET is invalid
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 03:07:47] "POST / HTTP/1.1" 200 -
+INFO:root:Placing LIMIT order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.1, 'price': '70000.0', 'timeInForce': 'GTC'}
+INFO:root:\u2705 Order placed successfully: {'orderId': 5227278480, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'KMOdvS7wcNktPoyOYNO9et', 'price': '70000.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1752010680642}
+ERROR:root:Balance fetch failed: APIError(code=-5000): Path /fapi/v1/balance, Method GET is invalid
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2025 03:08:01] "POST / HTTP/1.1" 200 -
